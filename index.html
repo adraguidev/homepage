@@ -3,10 +3,605 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Résumé</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <nav class="navbar">
+      <img src="assets/logo.jpg" alt="Avatar" class="navbar__avatar" />
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="#home">Home</a></li>
+        <li class="navbar__item"><a href="#profile">Profile</a></li>
+        <li class="navbar__item"><a href="#experience">Experience</a></li>
+        <li class="navbar__item"><a href="#education">Education</a></li>
+        <li class="navbar__item"><a href="#skills">Skills</a></li>
+      </ul>
+      <a href="#contact" class="navbar__contact">Contact Me</a>
+    </nav>
+    <main>
+      <div class="header">
+        <div class="status">Available for Work</div>
+        <h1 class="name">Adrian Aguirre</h1>
+        <h2 class="title">Self-Taught Developer</h2>
+        <div class="buttons">
+          <a href="mailto:aaguirreb16@gmail.com" class="button">Send Email</a>
+          <a href="assets/CV.pdf" class="button button--secondary"
+            >Download CV</a
+          >
+        </div>
+      </div>
+      <div class="profile-container">
+        <div class="profile-image">
+          <img src="assets/avatar.png" alt="Profile Image" />
+        </div>
+        <div class="profile-description">
+          <h3 class="profile-title">Professional Profile</h3>
+          <p class="profile-text">
+            Specialized in digital transformation through data analysis and
+            automation. With a Bachelor's degree in Administrative Engineering
+            and over 6 years of experience, excels in promoting operational
+            efficiency and innovation. Passionate about programming,
+            continuously exploring new languages to enhance skills in software
+            development.
+          </p>
+          <div class="profile-links">
+            <a href="https://www.linkedin.com/in/adragui/" class="profile-link">
+              <svg
+                class="profile-link-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                ></path>
+              </svg>
+              LinkedIn
+            </a>
+            <p class="profile-location">
+              <svg
+                class="profile-location-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                ></path>
+              </svg>
+              Lima, PERU
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="experience-container">
+        <h3 class="experience-title">Work Experience</h3>
+        <p class="experience-subtitle"></p>
+        <div class="experience-timeline">
+          <div class="experience-item">
+            <div class="experience-details">
+              <h4 class="experience-role">Operations Analyst</h4>
+              <p class="experience-company">
+                Superintendencia Nacional de Migraciones Perú · Full-Time
+              </p>
+              <p class="experience-location">
+                <svg
+                  class="experience-location-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                  ></path>
+                </svg>
+                Lima, Peru · On-Site
+              </p>
+              <p class="experience-description">
+                Created and maintained dashboards using POWERBI, Excel, and
+                other statistical software, optimized production processes,
+                prepared statistical reports, managed administrative aspects,
+                handled resource requests, and provided IT support.
+              </p>
+            </div>
+            <div class="experience-date">
+              <svg
+                class="experience-date-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"
+                ></path>
+              </svg>
+              Aug 2019 - Present · 4 years 11 months
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-details">
+              <h4 class="experience-role">
+                Operations Assistant (Technical - Commercial)
+              </h4>
+              <p class="experience-company">
+                Segurinvest Corredores de Seguros SAC · Full-Time
+              </p>
+              <p class="experience-location">
+                <svg
+                  class="experience-location-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                  ></path>
+                </svg>
+                Lima, Peru
+              </p>
+              <p class="experience-description">
+                Implemented business intelligence procedures, provided
+                administrative support to sales promoters, offered exceptional
+                customer service, handled insurance quotations and processes,
+                managed data entry, and generated commission settlements.
+              </p>
+            </div>
+            <div class="experience-date">
+              <svg
+                class="experience-date-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"
+                ></path>
+              </svg>
+              Aug 2018 - Feb 2019 · 7 months
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-details">
+              <h4 class="experience-role">Operations Analyst</h4>
+              <p class="experience-company">AVLA</p>
+              <p class="experience-location">
+                <svg
+                  class="experience-location-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                  ></path>
+                </svg>
+                Lima, Peru
+              </p>
+              <p class="experience-description">
+                Issued and renewed insurance contracts, controlled and sent
+                policies, participated in post-sale activities, identified areas
+                for process improvement, managed guarantees, and handled policy
+                and invoice records.
+              </p>
+            </div>
+            <div class="experience-date">
+              <svg
+                class="experience-date-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"
+                ></path>
+              </svg>
+              Apr 2017 - Mar 2018 · 1 year
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-details">
+              <h4 class="experience-role">Issuance Assistant</h4>
+              <p class="experience-company">
+                La Positiva Vida Seguros y Reaseguros · Full-Time
+              </p>
+              <p class="experience-location">
+                <svg
+                  class="experience-location-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                  ></path>
+                </svg>
+                Lima, Peru · On-Site
+              </p>
+              <p class="experience-description">
+                Provided customer support, collected and reported policy data,
+                handled the issuance and endorsement of life insurance policies,
+                generated policy modifications, prepared policy packages, and
+                managed policy service requests.
+              </p>
+            </div>
+            <div class="experience-date">
+              <svg
+                class="experience-date-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"
+                ></path>
+              </svg>
+              Nov 2014 - Mar 2017 · 2 years 5 months
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-details">
+              <h4 class="experience-role">Customer Service Intern</h4>
+              <p class="experience-company">Edelnor Peru · Internship</p>
+              <p class="experience-location">
+                <svg
+                  class="experience-location-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                  ></path>
+                </svg>
+                Lima · On-Site
+              </p>
+              <p class="experience-description">
+                Managed customer accounts, facilitated payment agreements,
+                contributed to re-invoicing processes, and supported the sale of
+                new products and services, always providing high-quality
+                service.
+              </p>
+            </div>
+            <div class="experience-date">
+              <svg
+                class="experience-date-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"
+                ></path>
+              </svg>
+              Oct 2012 - Jul 2014 · 1 year 10 months
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="education-container">
+        <h3 class="education-title">Education</h3>
+        <p class="education-subtitle">
+          Degrees and certifications in the specialized fields of tech
+          development, data analysis, engineering, and strategic planning.
+        </p>
+        <div class="education-timeline">
+          <div class="education-item">
+            <div class="education-details">
+              <h4 class="education-school">Digital House</h4>
+              <p class="education-degree">Certified Tech Developer</p>
+            </div>
+            <div class="education-date">
+              <svg
+                class="education-date-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"
+                ></path>
+              </svg>
+              Jul 2023 - Jun 2025
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="education-details">
+              <h4 class="education-school">SDC-Learning</h4>
+              <p class="education-degree">
+                Specialization in Python for Data Analysis
+              </p>
+            </div>
+            <div class="education-date">
+              <svg
+                class="education-date-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"
+                ></path>
+              </svg>
+              2020
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="education-details">
+              <h4 class="education-school">
+                Universidad Inca Garcilaso de la Vega
+              </h4>
+              <p class="education-degree">Engineering</p>
+            </div>
+            <div class="education-date">
+              <svg
+                class="education-date-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"
+                ></path>
+              </svg>
+              2009 – 2013
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="education-details">
+              <h4 class="education-school">Instituto Peruano de Seguros</h4>
+              <p class="education-degree">
+                Specialization in Risk Management and Insurance
+              </p>
+            </div>
+            <div class="education-date">
+              <svg
+                class="education-date-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"
+                ></path>
+              </svg>
+              2016 – 2017
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="education-details">
+              <h4 class="education-school">Universidad de Piura</h4>
+              <p class="education-degree">Strategic Planning</p>
+            </div>
+            <div class="education-date">
+              <svg
+                class="education-date-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"
+                ></path>
+              </svg>
+              2013
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-container">
+        <h3 class="skills-title">Professional Skills</h3>
+        <p class="skills-subtitle">
+          Key competencies essential for navigating and excelling in various
+          professional contexts.
+        </p>
+        <div class="skills-section">
+          <h4 class="skills-category">Data Science</h4>
+          <div class="skills-list">
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Data Analysis
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Machine Learning
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Statistical Modeling
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Data Visualization
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Big Data Analytics
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Predictive Modeling
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Deep Learning
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Data Mining
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Statistical Inference
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Hypothesis Testing
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Data Cleaning
+            </span>
+          </div>
+        </div>
+        <div class="skills-section">
+          <h4 class="skills-category">Business Consultation</h4>
+          <div class="skills-list">
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Strategic Planning
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Business Analysis
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Market Research
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Financial Analysis
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Problem-Solving
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Project Management
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Risk Assessment
+            </span>
+            <span class="skill-item">
+              <svg
+                class="skill-check"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 19L2 12l1.5-1.5L9 16.17 20.5 4.67 22 6l-13 13z" />
+              </svg>
+              Negotiation Skills
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="languages-container">
+        <h3 class="languages-title">Languages</h3>
+        <p class="languages-subtitle">
+          Proficient in multiple languages, facilitating effective communication
+          and collaboration in diverse settings.
+        </p>
+        <div class="languages-list">
+          <div class="language-item">
+            <span class="language-flag">🇬🇧</span>
+            <div class="language-info">
+              <span class="language-name">English</span>
+              <span class="language-proficiency">Advanced Proficiency</span>
+            </div>
+          </div>
+          <div class="language-item">
+            <span class="language-flag">🇪🇸</span>
+            <div class="language-info">
+              <span class="language-name">Spanish</span>
+              <span class="language-proficiency">Native</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
