@@ -1,0 +1,115 @@
+{
+    "profile": {
+      "status": "Available for Work",
+      "name": "Adrian Aguirre",
+      "title": "Self-Taught Developer",
+      "email": "https://www.linkedin.com/in/adragui/?locale=en_US",
+      "cv": "assets/CV.pdf",
+      "image": "assets/avatar.png",
+      "description": "Specialized in digital transformation through data analysis and automation. With a Bachelor's degree in Administrative Engineering and over 6 years of experience, excels in promoting operational efficiency and innovation. Passionate about programming, continuously exploring new languages to enhance skills in software development.",
+      "location": "Lima, PERU",
+      "linkedin": "https://www.linkedin.com/in/adragui/"
+    },
+    "experience": [
+      {
+        "role": "Operations Analyst",
+        "company": "Superintendencia Nacional de Migraciones Perú · Full-Time",
+        "location": "Lima, Peru",
+        "description": "Created and maintained dashboards using POWERBI, Excel, and other statistical software, optimized production processes, prepared statistical reports, managed administrative aspects, handled resource requests, and provided IT support.",
+        "date": "Aug 2019 - Present"
+      },
+      {
+        "role": "Operations Assistant (Technical - Commercial)",
+        "company": "Segurinvest Corredores de Seguros SAC · Full-Time",
+        "location": "Lima, Peru",
+        "description": "Implemented business intelligence procedures, provided administrative support to sales promoters, offered exceptional customer service, handled insurance quotations and processes, managed data entry, and generated commission settlements.",
+        "date": "Aug 2018 - Feb 2019 · 7 months"
+      },
+      {
+        "role": "Operations Analyst",
+        "company": "AVLA · Full-Time",
+        "location": "Lima, Peru",
+        "description": "Issued and renewed insurance contracts, controlled and sent policies, participated in post-sale activities, identified areas for process improvement, managed guarantees, and handled policy and invoice records.",
+        "date": "Apr 2017 - Mar 2018 · 1 year"
+      },
+      {
+        "role": "Issuance Assistant",
+        "company": "La Positiva Vida Seguros y Reaseguros · Full-Time",
+        "location": "Lima, Peru",
+        "description": "Provided customer support, collected and reported policy data, handled the issuance and endorsement of life insurance policies, generated policy modifications, prepared policy packages, and managed policy service requests.",
+        "date": "Nov 2014 - Mar 2017 · 2 years 5 months"
+      },
+      {
+        "role": "Customer Service Intern",
+        "company": "Edelnor Peru · Internship",
+        "location": "Lima, Peru",
+        "description": "Managed customer accounts, facilitated payment agreements, contributed to re-invoicing processes, and supported the sale of new products and services, always providing high-quality service.",
+        "date": "Oct 2012 - Jul 2014 · 1 year 10 months"
+      }
+    ],
+    "education": [
+      {
+        "school": "Digital House",
+        "degree": "Certified Tech Developer",
+        "date": "Jul 2023 - Jun 2025"
+      },
+      {
+        "school": "SDC-Learning",
+        "degree": "Specialization in Python for Data Analysis",
+        "date": "2020"
+      },
+      {
+        "school": "Universidad Inca Garcilaso de la Vega",
+        "degree": "Engineering",
+        "date": "2009 - 2013"
+      },
+      {
+        "school": "Instituto Peruano de Seguros",
+        "degree": "Specialization in Risk Management and Insurance",
+        "date": "2016 - 2017"
+      },
+      {
+        "school": "Universidad de Piura",
+        "degree": "Strategic Planning",
+        "date": "2013"
+      }
+    ],
+    "skills": {
+      "Data Science": [
+        "Data Analysis",
+        "Machine Learning",
+        "Statistical Modeling",
+        "Data Visualization",
+        "Big Data Analytics",
+        "Predictive Modeling",
+        "Deep Learning",
+        "Data Mining",
+        "Statistical Inference",
+        "Hypothesis Testing",
+        "Data Cleaning"
+      ],
+      "Business Consultation": [
+        "Strategic Planning",
+        "Business Analysis",
+        "Market Research",
+        "Financial Analysis",
+        "Problem-Solving",
+        "Project Management",
+        "Risk Assessment",
+        "Negotiation Skills"
+      ]
+    },
+    "languages": [
+      {
+        "flag": "🇬🇧",
+        "name": "English",
+        "proficiency": "Advanced Proficiency"
+      },
+      {
+        "flag": "🇪🇸",
+        "name": "Spanish",
+        "proficiency": "Native"
+      }
+    ]
+  }
+  
