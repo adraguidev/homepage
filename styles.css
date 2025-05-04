@@ -16,10 +16,10 @@ body {
   --text-decoration-color: #ff9a00;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 30px;
-  max-width: 900px;
+.container, .resume {
+  max-width: 700px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .fh {
@@ -39,13 +39,36 @@ body {
   border: 1px solid #f5f5f5;
   box-shadow: 1px 1px 7px 7px #f5f5f5;
   padding: 30px 0;
-  max-width: 900px;
 }
 
 .resume__block {
   border-bottom: 3px solid var(--border-color);
   padding-bottom: 30px;
   margin-bottom: 15px;
+}
+
+.resume__block h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.resume__block .contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume__block .contact-links a {
+  color: #0074d9;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.resume__block .contact-links a:hover {
+  color: #005fa3;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 576px) {
@@ -64,6 +87,19 @@ body {
 
   .experiences {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-info__avatar {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container, .resume {
+    padding: 0 10px;
   }
 }
 
@@ -117,12 +153,14 @@ body {
 .contact-info__item-icon { height: 1.1428rem; vertical-align: text-bottom; }
 
 .contact-info__avatar {
+  display: block;
+  margin: 0 auto 0.5rem auto;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border: 3px solid;
-  border-color: var(--text-decoration-color);
+  border: 3px solid #f5f5f5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #fff;
 }
 
 /* Intro & skills */
