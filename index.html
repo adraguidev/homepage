@@ -55,6 +55,18 @@
       <h2>Languages</h2>
       <p>Spanish (native), English (B2)</p>
     </section>
+
+    <section class="resume__block">
+      <h2>Hobbies & Fun</h2>
+      <p>Cycling · Chess · <span id="konami">?</span></p>
+    </section>
+    <script>
+    document.addEventListener('keydown',k=>{
+      const d=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+      window.seq=[...(window.seq||[]),k.key]; window.seq.splice(-d.length-1);
+      if(d.every((c,i)=>window.seq.slice(-d.length)[i]===c)) document.getElementById('konami').textContent='🎉';
+    });
+    </script>
   </main>
 </body>
 </html> 
