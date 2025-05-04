@@ -42,13 +42,13 @@ body {
 }
 
 .resume__block {
+  background: #fffdfa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   border-bottom: 3px solid var(--border-color);
-  padding-bottom: 30px;
-  margin-bottom: 15px;
-  background: #fff;
-  border-radius: 8px;
+  padding: 32px 24px 28px 24px;
+  margin-bottom: 18px;
   box-sizing: border-box;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
 }
 
 .resume__block h2 {
@@ -109,8 +109,14 @@ body {
     padding: 15px 5px 20px 5px;
     margin-bottom: 10px;
   }
-  ul {
-    padding-left: 1.2rem;
+  ul li {
+    padding-left: 1.3rem;
+    font-size: 1rem;
+  }
+  ul li::before {
+    left: 0.1rem;
+    width: 0.6em;
+    height: 0.6em;
   }
 }
 
@@ -215,7 +221,28 @@ body {
 .additional-info__languages-item { color: var(--secondary-text-color); }
 
 ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+ul li {
+  position: relative;
   padding-left: 2rem;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
+  margin-bottom: 0.7rem;
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 0.7em;
+  width: 0.7em;
+  height: 0.7em;
+  background: #ff9a00;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  transform: translateY(-50%);
 } 
