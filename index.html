@@ -3,9 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
   <title>Résumé</title>
 </head>
 <body>
-— Hello World! &#x1F609;
+  <main class="resume">
+    <section class="resume__block">With 6+ years optimising processes and operations, I'm Adrian Aguirre — a data‑driven professional focused on digital transformation.</section>
+    <section class="resume__block">
+      <h2>Contact</h2>
+      <img src="assets/avatar.png" alt="Avatar" class="contact-info__avatar">
+      <a href="mailto:aaguirreb16@gmail.com">📧 aaguirreb16@gmail.com</a>
+      <a href="tel:+51994762399">📞 +51 994 762 399</a>
+      <a href="https://www.linkedin.com/in/adragui/">LinkedIn</a>
+    </section>
+    <section class="resume__block">
+      <h2>Timeline</h2>
+      <ul>
+        <li>2019‑Present – Operations Analyst, National Migration Superintendency</li>
+        <li>2018‑2019 – Operations Assistant, Segurinvest Insurance Brokers</li>
+        <li>2017‑2018 – Operations Analyst, AVLA</li>
+        <li>2014‑2017 – Emission Assistant, La Positiva Life Insurance</li>
+      </ul>
+    </section>
+    <section class="resume__block">
+      <h2>Skills</h2>
+      <p>Data Analysis · Process Automation · Project Management · Team Leadership · Effective Communication · Problem‑Solving · Critical Thinking</p>
+    </section>
+    <section class="resume__block">
+      <h2>Experience</h2>
+      <h3>Operations Analyst – National Migration Superintendency (2019‑Present)</h3>
+      <ul>
+        <li>Implemented dashboards to optimise decision‑making.</li>
+        <li>Led resource‑management and continuous‑improvement initiatives.</li>
+      </ul>
+      <h3>Operations Assistant – Segurinvest Insurance Brokers (2018‑2019)</h3>
+      <ul><li>Optimised sales strategies through business intelligence.</li></ul>
+      <h3>Operations Analyst – AVLA (2017‑2018)</h3>
+      <ul><li>Managed insurance contract issuance and renewal processes.</li></ul>
+      <h3>Emission Assistant – La Positiva Life Insurance (2014‑2017)</h3>
+      <ul><li>Supported life‑insurance policy issuance and administration.</li></ul>
+    </section>
+
+    <section class="resume__block">
+      <h2>Education</h2>
+      <p>2023‑Present – Certified Tech Developer, Digital House</p>
+      <p>2020 – Specialisation in Python for Data Analysis, SDC‑Learning</p>
+      <p>2009‑2013 – BSc Administrative Engineering, Universidad Inca Garcilaso de la Vega</p>
+    </section>
+
+    <section class="resume__block">
+      <h2>Languages</h2>
+      <p>Spanish (native), English (B2)</p>
+    </section>
+
+    <section class="resume__block">
+      <h2>Hobbies & Fun</h2>
+      <p>Cycling · Chess · <span id="konami">?</span></p>
+    </section>
+    <script>
+    document.addEventListener('keydown',k=>{
+      const d=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+      window.seq=[...(window.seq||[]),k.key]; window.seq.splice(-d.length-1);
+      if(d.every((c,i)=>window.seq.slice(-d.length)[i]===c)) document.getElementById('konami').textContent='🎉';
+    });
+    </script>
+  </main>
 </body>
 </html> 
