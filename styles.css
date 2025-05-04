@@ -45,6 +45,10 @@ body {
   border-bottom: 3px solid var(--border-color);
   padding-bottom: 30px;
   margin-bottom: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
 }
 
 .resume__block h2 {
@@ -100,6 +104,13 @@ body {
 @media (max-width: 700px) {
   .container, .resume {
     padding: 0 10px;
+  }
+  .resume__block {
+    padding: 15px 5px 20px 5px;
+    margin-bottom: 10px;
+  }
+  ul {
+    padding-left: 1.2rem;
   }
 }
 
@@ -201,4 +212,10 @@ body {
 
 .additional-info__languages { margin-bottom: 20px; }
 .additional-info__languages-header { color: var(--secondary-text-color); margin-bottom: 20px; }
-.additional-info__languages-item { color: var(--secondary-text-color); } 
+.additional-info__languages-item { color: var(--secondary-text-color); }
+
+ul {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+} 
